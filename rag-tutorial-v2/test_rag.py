@@ -47,3 +47,10 @@ def query_and_validate(question: str, expected_response: str):
         raise ValueError(
             f"Invalid evaluation result. Cannot determine if 'true' or 'false'."
         )
+
+def main():
+    test_monopoly_rules()
+    test_ticket_to_ride_rules()
+    
+if __name__ == "__main__":
+    main()
